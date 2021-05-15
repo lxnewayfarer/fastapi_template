@@ -25,7 +25,7 @@ Documentation of Celery: https://docs.celeryproject.org/en/stable/getting-starte
 - Celery - Distributed task queue
 - Pydantic - Data validation and settings management using Python type hinting
 
-*Python 3.8* is necessary for *pipenv*
+**Python 3.8** is necessary for *pipenv*
 
 ## Notes:
 - If you changed your worker, you have to restart Celery to use updated worker
