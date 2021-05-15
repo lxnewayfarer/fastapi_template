@@ -1,4 +1,4 @@
-# *FastAPI* template bundled in *pipenv* and including *Celery* back processing
+# *FastAPI* template bundled in *pipenv* and including *Celery* back processing with RabbitMQ broker in docker-compose
 
 This is an another yet FastAPI template which was bundled with pipenv, and using as simplified as possible 
 docker-compose with clean official modules and containers to run RabbitMQ and Flower UI to check Celery workers. 
