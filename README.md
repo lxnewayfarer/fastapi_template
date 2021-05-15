@@ -14,7 +14,7 @@ Documentation of Celery: https://docs.celeryproject.org/en/stable/getting-starte
 
 ## Run:
 - To start Rabbitmq and Celery-flower, run: `docker-compose up`
-- Then **go to the /app directory** and run: `celery -A celery_processing.celery_worker worker --loglevel=INFO`
+- Then to start Celery worker, **go to the /app directory** and run: `celery -A celery_processing.celery_worker worker --loglevel=INFO`
 - And to start FastAPI application, run: `pipenv run uvicorn main:app --reload --port 8000`
 
 Ports:
