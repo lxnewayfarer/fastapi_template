@@ -18,17 +18,14 @@ Documentation of Celery: https://docs.celeryproject.org/en/stable/getting-starte
 - And to start FastAPI application, run: `pipenv run uvicorn main:app --reload --port 8000`
 
 ## Description of dependencies:
-*You may check list of dependencies in Pipfile*
+*You can check list of dependencies in Pipfile*
 
-FastAPI framework - web framework for building APIs. Features: high perfomance, minimalistic, validation for most data types, automatic Swagger/Redoc documentation, async support
+- FastAPI framework - web framework for building APIs. Features: high perfomance, minimalistic, validation for most data types, automatic Swagger/Redoc documentation, async support
+- Uvicorn - ASGI server implementation, using uvloop and httptools
+- Celery - Distributed task queue
+- Pydantic - Data validation and settings management using Python type hinting
 
-Uvicorn - ASGI server implementation, using uvloop and httptools
-
-Celery - Distributed task queue
-
-Pydantic - Data validation and settings management using Python type hinting
-
-Python 3.8
+*Python 3.8* is necessary for *pipenv*
 
 ## Notes:
 - If you changed your worker, you have to restart Celery to use updated worker
