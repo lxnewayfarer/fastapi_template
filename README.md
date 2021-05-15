@@ -17,7 +17,13 @@ Documentation of Celery: https://docs.celeryproject.org/en/stable/getting-starte
 - Then **go to the /app directory** and run: `celery -A celery_processing.celery_worker worker --loglevel=INFO`
 - And to start FastAPI application, run: `pipenv run uvicorn main:app --reload --port 8000`
 
-## Description of dependencies:
+Ports:
+- Your API will be available on http://localhost:8000
+- Flower: http://localhost:5555 (Basic auth login/password: test:test)
+- Swagger UI: http://localhost:8000/docs
+- RabbitMQ UI: http://localhost:15672 (Auth: guest:guest. You can update environment in docker-compose to set your credentials for user and admin)
+
+## Short description of dependencies:
 *You can check list of dependencies in Pipfile*
 
 - FastAPI framework - web framework for building APIs. Features: high perfomance, minimalistic, validation for most data types, automatic Swagger/Redoc documentation, async support
