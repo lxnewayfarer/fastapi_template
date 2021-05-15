@@ -9,6 +9,8 @@ uvicorn = "*"
 celery = "*"
 pydantic = "*"
 redis = "*"
+python-multipart = "*"
+pylint = "*"
 
 [dev-packages]
 
