@@ -19,9 +19,13 @@ Documentation of Celery: https://docs.celeryproject.org/en/stable/getting-starte
 
 ## Description of dependencies:
 *You may check list of dependencies in Pipfile*
+
 FastAPI framework - web framework for building APIs. Features: high perfomance, minimalistic, validation for most data types, automatic Swagger/Redoc documentation, async support
+
 Uvicorn - ASGI server implementation, using uvloop and httptools
+
 Celery - Distributed task queue
+
 Pydantic - Data validation and settings management using Python type hinting
 
 Python 3.8
