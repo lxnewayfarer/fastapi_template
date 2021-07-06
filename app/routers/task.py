@@ -20,8 +20,10 @@ async def task_get(id: Optional[int] = None):
     # runs celery task with this ID (cycle N=id times)
     test_task.delay(id)
 
-    return {"status": "ok",
-            "data": {
-                "id": id,
-                "task": "task"
-            }}
+    return {
+        "status": "ok",
+        "data": {
+            "id": id,
+            "task": "task"
+        }
+    }
